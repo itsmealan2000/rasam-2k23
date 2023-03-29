@@ -24,7 +24,7 @@ const Clock = () => {
 
     setDays(Math.floor(distance / _day))
 
-    setHours(Math.floor((distance % _day) / _hour))
+    setHours(Math.floor(distance / _hour))
 
     setMinutes(Math.floor((distance % _hour) / _minute))
 
@@ -40,7 +40,7 @@ const Clock = () => {
 
   return (
     <div>
-      {days} Days {hours} Hours {minutes} Minutes {seconds} Seconds till descent
+      {hours} : {minutes} : {seconds}
     </div>
   )
 }
