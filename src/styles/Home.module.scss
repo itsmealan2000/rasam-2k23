@@ -1,0 +1,29 @@
+.mainContainer {
+    height: 100dvh;
+    width: 100dvw;
+    background-color: black;
+}
+
+.videoContainer {
+    height: 100dvh;
+    width: 100dvw;
+    background-color: yellow;
+    overflow: hidden;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    video {
+        height: 130%;
+    }
+}
+
+
+@media screen and (min-width: 1200px) {
+    .videoContainer {
+        video {
+            height: 116%;
+        }
+    }
+}
