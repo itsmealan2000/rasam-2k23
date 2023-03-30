@@ -1,0 +1,18 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "ananda";
+  src: url("/fonts/ananda-neptouch.ttf");
+}
+@font-face {
+  font-family: "aquatico";
+  src: url("/fonts/aquatico-regular.otf");
+}
+@font-face {
+  font-family: "playfair";
+  src: url("/fonts/pf-display.ttf");
+}/*# sourceMappingURL=global.css.map */
