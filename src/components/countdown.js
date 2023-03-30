@@ -40,7 +40,7 @@ const Clock = () => {
 
   return (
     <div>
-      {days} Days {hours} Hours {minutes} Minutes {seconds} Seconds till descent
+      {days}  {hours}  {minutes}  {seconds} 
     </div>
   )
 }

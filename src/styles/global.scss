@@ -5,9 +5,16 @@
 }
 
 @font-face {
-    font-family: 'Aquatico';
-    src: url('/fonts/aquatico-regular.otf');
-
-    font-family: 'ananda-neptouch';
+    font-family: 'ananda';
     src: url('/fonts/ananda-neptouch.ttf')
+}
+
+@font-face {
+    font-family: 'aquatico';
+    src: url('/fonts/aquatico-regular.otf');
+}
+
+@font-face {
+    font-family: 'playfair';
+    src: url('/fonts/pf-display.ttf');
 }
