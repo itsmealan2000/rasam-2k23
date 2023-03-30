@@ -15,7 +15,8 @@
     align-items: center;
 
     video {
-        height: 130%;
+        height: auto;
+        width: 100%;
     }
 }
 
@@ -23,7 +24,8 @@
 @media screen and (min-width: 1200px) {
     .videoContainer {
         video {
-            height: 116%;
+            height: auto;
+            width: 100%;
         }
     }
 }
