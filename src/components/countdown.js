@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import styles from "../styles/Countdown.module.scss";
 
 const Clock = () => {
   const [days, setDays] = useState(0);
@@ -39,8 +40,22 @@ const Clock = () => {
   });
 
   return (
-    <div>
-      {hours} : {minutes} : {seconds}
+    <div className={styles.countdownContainer}>
+      <div className={styles.clockBg}>
+        <div>
+          <p>{hours}</p>
+        </div>
+      </div>
+      <div className={styles.clockBg}>
+        <div>
+          <p>{minutes}</p>
+        </div>
+      </div>
+      <div className={styles.clockBg}>
+        <div>
+          <p>{seconds}</p>
+        </div>
+      </div>
     </div>
   );
 };

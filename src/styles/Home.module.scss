@@ -1,31 +1,43 @@
 .mainContainer {
-    height: 100dvh;
-    width: 100dvw;
-    background-color: black;
+  height: 100dvh;
+  width: 100dvw;
+  background-color: black;
 }
 
 .videoContainer {
-    height: 100dvh;
-    width: 100dvw;
-    background-color: #01002b;
-    overflow: hidden;
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  height: 100dvh;
+  width: 100dvw;
+  background-color: #01002b;
+  overflow: hidden;
 
-    video {
-        height: auto;
-        width: 100%;
-    }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  video {
+    height: auto;
+    width: 100%;
+  }
 }
 
+.clockContainer {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100dvw;
+  height: 300px;
+  gap: 50px;
+  bottom: 130px;
+  //   background-color: yellow;
+}
 
 @media screen and (min-width: 1200px) {
-    .videoContainer {
-        video {
-            height: auto;
-            width: 100%;
-        }
+  .videoContainer {
+    video {
+      height: auto;
+      width: 100%;
     }
+  }
 }

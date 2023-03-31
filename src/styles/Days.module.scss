@@ -1,0 +1,27 @@
+.daysContainer {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  p {
+    text-transform: uppercase;
+    font-family: "aquatico";
+    color: white;
+    font-weight: 500;
+    font-size: 30px;
+    animation: fadeinout 2s infinite;
+    text-shadow: 2px 2px rgba(250, 250, 250, 0.164);
+  }
+}
+
+// animations
+@keyframes fadeinout {
+  0% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.2;
+  }
+}
