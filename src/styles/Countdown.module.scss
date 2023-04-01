@@ -6,6 +6,9 @@
   flex-direction: row;
   width: 600px;
   font-family: "aquatico";
+
+  position: absolute;
+  bottom: -40px;
 }
 
 .clockBg {
@@ -19,11 +22,11 @@
   justify-content: center;
   align-items: center;
 
-  transform-style: preserve-3d;
-  transition: all 0.5s ease-out;
-  transform: translate(0%, 0%) rotateX(-30deg) rotateY(0deg) rotateZ(0deg);
+  // transform-style: preserve-3d;
+  // transition: all 0.5s ease-out;
+  // transform: translate(0%, 0%) rotateX(-30deg) rotateY(0deg) rotateZ(0deg);
 
-  box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.14);
+  // box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.14);
 }
 
 .clockBg div {
