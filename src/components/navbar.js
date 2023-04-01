@@ -3,7 +3,7 @@ import styles from "../styles/Navbar.module.scss";
 const NavBar = () => {
   return (
     <div className={styles.navBarContainer}>
-      <ul>
+      <ul className={styles.listDesk}>
         <li>
           <a href="#">ABOUT</a>
         </li>
@@ -12,6 +12,23 @@ const NavBar = () => {
         </li>
         <li>
           <a href="#">SOCIAL</a>
+        </li>
+      </ul>
+      <ul className={styles.listMob}>
+        <li>
+          <a href="#">
+            <i className="bi bi-info-circle-fill"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i className="bi bi-calendar2-event-fill"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bi bi-people-fill"></i>
+          </a>
         </li>
       </ul>
     </div>
