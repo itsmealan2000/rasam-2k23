@@ -41,3 +41,16 @@
     }
   }
 }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 1) {
+  .mainContainer {
+    background-color: #01002b;
+    // background-color: white;
+    height: 100dvh;
+    width: 100dvw;
+    overflow: hidden;
+  }
+  .videoContainer {
+    display: none;
+  }
+}
