@@ -27,7 +27,7 @@ const NavBar = () => {
         </li>
         <li>
           <a href="#">
-            <i class="bi bi-people-fill"></i>
+            <i className="bi bi-people-fill"></i>
           </a>
         </li>
       </ul>

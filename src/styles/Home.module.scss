@@ -50,7 +50,24 @@
     width: 100dvw;
     overflow: hidden;
   }
+
   .videoContainer {
-    display: none;
+    height: 100dvh;
+    width: 100dvw;
+    background-color: #01002b;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    video {
+      height: auto;
+      width: 125%;
+    }
+
+    .clockContainer {
+      display: none;
+    }
   }
 }
