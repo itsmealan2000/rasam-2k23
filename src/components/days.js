@@ -20,7 +20,7 @@ const Days = () => {
 
   return (
     <div className={styles.daysContainer}>
-      <p>{days} Days till descent ...</p>
+      <p>{days} Leagues Till Descent ...</p>
     </div>
   );
 };
