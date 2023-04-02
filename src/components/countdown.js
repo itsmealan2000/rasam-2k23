@@ -43,17 +43,17 @@ const Clock = () => {
     <div className={styles.countdownContainer}>
       <div className={styles.clockBg}>
         <div>
-          <p>{hours}</p>
+          <p>{hours} H</p>
         </div>
       </div>
       <div className={styles.clockBg}>
         <div>
-          <p>{minutes}</p>
+          <p>{minutes} M</p>
         </div>
       </div>
       <div className={styles.clockBg}>
         <div>
-          <p>{seconds}</p>
+          <p>{seconds} S</p>
         </div>
       </div>
     </div>

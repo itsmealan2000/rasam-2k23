@@ -27,3 +27,22 @@
     opacity: 0.2;
   }
 }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 1) {
+  .daysContainer {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    position: absolute;
+    top: 80px;
+    p {
+      text-transform: uppercase;
+      font-family: "aquatico";
+      color: white;
+      font-weight: 500;
+      font-size: 24px;
+      animation: fadeinout 2s infinite;
+      text-shadow: 2px 2px rgba(250, 250, 250, 0.164);
+    }
+  }
+}
