@@ -67,7 +67,8 @@
     }
 
     .clockContainer {
-      display: none;
+      position: absolute;
+      bottom: 200px;
     }
   }
 }

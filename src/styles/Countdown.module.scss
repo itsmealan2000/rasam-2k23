@@ -41,3 +41,34 @@
     text-shadow: 0px 7px 10px rgba(0, 0, 0, 0.6);
   }
 }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 1) {
+  .countdownContainer {
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    font-family: "aquatico";
+
+    position: absolute;
+    bottom: 0px;
+
+    background-color: #01002b36;
+    backdrop-filter: blur(10px);
+    height: 150px;
+    padding: 30px;
+    border-radius: 1rem;
+    color: white;
+    white-space: nowrap;
+  }
+
+  .clockBg {
+    all: unset;
+  }
+
+  .clockBg div {
+    font-size: 25px;
+  }
+}
