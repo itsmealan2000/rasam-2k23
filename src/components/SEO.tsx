@@ -8,13 +8,18 @@ interface SEOProps {
   keywords?: string
 }
 
-const SEO = ({ title, description, imageURL, keywords }: SEOProps) => {
+const SEO = ({
+  title,
+  description,
+  imageURL,
+  keywords,
+}: SEOProps): JSX.Element => {
   return (
     <Head>
       <title>{title + ' | RASAM 2023'}</title>
-      <meta charSet='UTF-8'> </meta>
-      <meta name='description' content={description}></meta>
-      <meta name='keywords' content={keywords ? keywords : ''}></meta>
+      <meta charSet='UTF-8' />
+      <meta name='description' content={description} />
+      <meta name='keywords' content={keywords ? keywords : ''} />
     </Head>
   )
 }
