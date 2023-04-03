@@ -4,6 +4,7 @@ import styles from "../styles/Home.module.scss";
 import NavBar from "../components/navbar";
 import Days from "../components/days";
 import Clock from "../components/countdown";
+import SEO from "@/components/SEO";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -41,6 +42,7 @@ const Home = () => {
   }, [isMobile]);
   return (
     <>
+      <SEO  title="Home" description="RASAM season 4 is here. Yaaay!!!"/>
       <main className={styles.mainContainer}>
         <NavBar />
         <div className={styles.videoContainer}>
