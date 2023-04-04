@@ -4,6 +4,12 @@
   box-sizing: border-box;
 }
 
+html,
+body,
+#__next {
+  height: 100%;
+}
+
 @font-face {
   font-family: "ananda";
   src: url("/fonts/ananda-neptouch.ttf");
@@ -15,4 +21,4 @@
 @font-face {
   font-family: "playfair";
   src: url("/fonts/pf-display.ttf");
-}/*# sourceMappingURL=global.css.map */
+} /*# sourceMappingURL=global.css.map */
