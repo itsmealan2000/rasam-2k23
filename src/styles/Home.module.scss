@@ -22,21 +22,7 @@
 }
 
 .logoContainer {
-  height: 250px;
-  width: 250px;
-  overflow: hidden;
-  position: absolute;
-  bottom: 1%;
-  left: 1%;
-
-  img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    opacity: 0.9;
-    filter: brightness(90%);
-    // filter: blur(1px);
-  }
+  display: none;
 }
 
 .clockContainer {
@@ -85,12 +71,12 @@
     }
 
     .logoContainer {
-      height: 200px;
-      width: 200px;
+      height: 150px;
+      width: 150px;
       overflow: hidden;
       position: absolute;
-      top: 1%;
-      width: 100%;
+      top: 0;
+      width: 100dvw;
       display: flex;
       justify-content: center;
       align-items: center;
