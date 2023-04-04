@@ -5,8 +5,8 @@
 }
 
 .videoContainer {
-  height: 100dvh;
-  width: 100dvw;
+  height: 100vh;
+  width: 100vw;
   background-color: #01002b;
   overflow: hidden;
 
@@ -15,8 +15,27 @@
   align-items: center;
 
   video {
-    height: auto;
+    height: 100%;
     width: 100%;
+    object-fit: cover;
+  }
+}
+
+.logoContainer {
+  height: 250px;
+  width: 250px;
+  overflow: hidden;
+  position: absolute;
+  bottom: 1%;
+  left: 1%;
+
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    opacity: 0.9;
+    filter: brightness(90%);
+    // filter: blur(1px);
   }
 }
 
@@ -26,11 +45,10 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 100dvw;
-  height: 300px;
-  gap: 50px;
-  bottom: 130px;
-  //   background-color: yellow;
+  width: 100vw;
+  height: 50%;
+  gap: 5%;
+  bottom: 10%;
 }
 
 @media screen and (min-width: 1200px) {
@@ -66,9 +84,31 @@
       width: 125%;
     }
 
+    .logoContainer {
+      height: 200px;
+      width: 200px;
+      overflow: hidden;
+      position: absolute;
+      top: 1%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+        opacity: 0.9;
+        filter: brightness(90%);
+        // filter: blur(1px);
+      }
+    }
+
     .clockContainer {
       position: absolute;
       bottom: 200px;
+      height: 40%;
     }
   }
 }

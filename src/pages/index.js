@@ -49,6 +49,9 @@ const Home = () => {
           <video autoPlay muted loop ref={videoRef}>
             <source src="/videos/raw_background.mp4" type="video/mp4" />
           </video>
+          <div className={styles.logoContainer}>
+            <img src="/images/logo.png" alt="rasam logo" />
+          </div>
           <div className={styles.clockContainer}>
             <Days />
             <Clock />
