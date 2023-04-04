@@ -19,10 +19,17 @@
     width: 100%;
     object-fit: cover;
   }
-}
-
-.logoContainer {
-  display: none;
+  img {
+    height: 270px;
+    width: 270px;
+    object-fit: contain;
+    opacity: 0.9;
+    filter: brightness(90%);
+    // filter: blur(1px);
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+  }
 }
 
 .clockContainer {
@@ -70,25 +77,16 @@
       width: 125%;
     }
 
-    .logoContainer {
+    img {
       height: 150px;
       width: 150px;
-      overflow: hidden;
+      object-fit: contain;
+      opacity: 0.9;
+      filter: brightness(90%);
+      // filter: blur(1px);
       position: absolute;
-      top: 0;
-      width: 100dvw;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
-      img {
-        height: 100%;
-        width: 100%;
-        object-fit: contain;
-        opacity: 0.9;
-        filter: brightness(90%);
-        // filter: blur(1px);
-      }
+      top: 0px;
+      margin-left: 30dvw;
     }
 
     .clockContainer {
