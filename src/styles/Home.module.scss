@@ -1,7 +1,6 @@
 .mainContainer,
 .aboutContainer {
-  overflow-x: hidden;
-  overflow-y: scroll;
+  overflow: hidden;
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
 }
@@ -52,11 +51,117 @@
   bottom: 10%;
 }
 
-.aboutContainer {
-  height: 100dvh;
-  width: 100dvw;
-  background-color: #01002b;
-  overflow-x: hidden;
+.homeFooter {
+  height: 300px;
+  background: #000;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+
+  .footerLogo {
+    height: 200px;
+    width: 200px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    font-size: 15px;
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: contain;
+      mix-blend-mode: difference;
+    }
+  }
+
+  .footerMiddle {
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .footerLeft {
+    width: 33%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    h1 {
+      font-family: "ananda";
+      margin-bottom: 10px;
+    }
+
+    .contact {
+      width: 250px;
+      height: 80px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      a {
+        text-decoration: none;
+        color: white;
+
+        &:nth-child(1):hover {
+          color: #c20034;
+        }
+
+        &:nth-child(2):hover {
+          color: #3b5998;
+        }
+
+        &:nth-child(3):hover {
+          color: #1d7e00;
+        }
+
+        &:active {
+          color: #fff;
+        }
+      }
+
+      i {
+        font-size: 50px;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+
+    p {
+      font-family: "aquatico";
+      font-size: 10px;
+      position: relative;
+      bottom: -50px;
+    }
+  }
+
+  .footerRight {
+    height: 100%;
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    iframe {
+      border: none;
+      border-radius: 1rem;
+      opacity: 0.5;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -108,6 +213,22 @@
       position: absolute;
       bottom: 200px;
       height: 40%;
+    }
+  }
+
+  .homeFooter {
+    display: flex;
+    flex-direction: column;
+    height: 750px;
+
+    h1 {
+      font-size: 35px;
+      margin-bottom: 20px;
+    }
+
+    .footerLeft {
+      width: 100%;
+      border-bottom: 1px dashed white;
     }
   }
 }
