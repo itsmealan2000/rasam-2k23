@@ -4,6 +4,7 @@ import styles from "../styles/Home.module.scss";
 import NavBar from "../components/navbar";
 import Days from "../components/days";
 import Clock from "../components/countdown";
+import SEO from "@/components/SEO";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -41,19 +42,20 @@ const Home = () => {
   }, [isMobile]);
   return (
     <>
-      <section className={styles.mainContainer}>
+      <SEO title="Home" description="RASAM season 4 is here. Yaaay!!!" />
+      <main className={styles.mainContainer}>
         <NavBar />
         <div className={styles.videoContainer}>
           <video autoPlay muted loop ref={videoRef}>
             <source src="/videos/raw_background.mp4" type="video/mp4" />
           </video>
-            <img src="/images/logo.png" alt="rasam logo" />
+          <img src="/images/logo.png" alt="rasam logo" />
           <div className={styles.clockContainer}>
             <Days />
             <Clock />
           </div>
         </div>
-      </section>
+      </main>
       <section className={styles.aboutContainer}></section>
     </>
   );
