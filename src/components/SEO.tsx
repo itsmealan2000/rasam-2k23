@@ -20,6 +20,12 @@ const SEO = ({
       <meta charSet='UTF-8' />
       <meta name='description' content={description} />
       <meta name='keywords' content={keywords ? keywords : ''} />
+      <meta property='og:title' content={title + ' | RASAM 2023'} />
+      <meta property='og:type' content='website' />
+      <meta property='og:image' content={imageURL ? imageURL : '/images/logo.png'} />
+      <meta property='og:description' content={description} />
+      <meta property='og:url' content='/' />
+    <meta property='' />  
     </Head>
   )
 }

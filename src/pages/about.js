@@ -5,7 +5,7 @@ import styles from '../styles/About.module.scss'
 
 export const getStaticProps = async () => {
   const url = process.env.CMSURL
-  const query = `*[_type == 'pages' && slug.current == 'pages']{about{ title, Content[]{children[]{_type, text}} ,metadata {title, desc} } }`
+  const query = `*[_type == 'pages' && slug.current == 'pages']{about{ title, Content[]{children[]{_type, text}} ,metadata {title, desc, image{ asset->{url} }} } }`
   const res = await fetch(url + encodeURIComponent(query))
   const data = await res.json()
 
@@ -17,6 +17,7 @@ export const getStaticProps = async () => {
 const About = ({ data }) => {
   const elemList = []
   const pagedata = data[0].about
+
   const [bodyContent, useBodyContent] = useState([])
 
   const videoRef = useRef(null)
@@ -57,13 +58,21 @@ const About = ({ data }) => {
   for (let i in children) {
     console.log(children[i]._type, children[i].text)
     if (children[i]._type == 'span') {
-      elemList.push(<span>{children[i].text}</span>)
+      elemList.push(<span key={i}>{children[i].text}</span>)
     }
   }
 
   return (
     <div>
-      <SEO title='About' description='This is all about the about page' />
+      <SEO
+        title={pagedata.metadata.title}
+        description={pagedata.metadata.desc}
+        imageURL={
+          pagedata.metadata.image
+            ? pagedata.metadata.image.asset.url
+            : undefined
+        }
+      />
       <NavBar />
       {elemList}
     </div>
