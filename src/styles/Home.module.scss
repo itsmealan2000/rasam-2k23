@@ -1,3 +1,11 @@
+.mainContainer,
+.aboutContainer {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+
 .mainContainer {
   height: 100dvh;
   width: 100dvw;
@@ -42,6 +50,13 @@
   height: 50%;
   gap: 5%;
   bottom: 10%;
+}
+
+.aboutContainer {
+  height: 100dvh;
+  width: 100dvw;
+  background-color: #01002b;
+  overflow-x: hidden;
 }
 
 @media screen and (min-width: 1200px) {
