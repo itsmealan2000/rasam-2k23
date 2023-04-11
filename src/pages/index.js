@@ -42,20 +42,21 @@ const Home = () => {
   }, [isMobile]);
   return (
     <>
-      <SEO  title="Home" description="RASAM season 4 is here. Yaaay!!!"/>
+      <SEO title="Home" description="RASAM season 4 is here. Yaaay!!!" />
       <main className={styles.mainContainer}>
         <NavBar />
         <div className={styles.videoContainer}>
           <video autoPlay muted loop ref={videoRef}>
             <source src="/videos/raw_background.mp4" type="video/mp4" />
           </video>
-            <img src="/images/logo.png" alt="rasam logo" />
+          <img src="/images/logo.png" alt="rasam logo" />
           <div className={styles.clockContainer}>
             <Days />
             <Clock />
           </div>
         </div>
       </main>
+      <section className={styles.aboutContainer}></section>
     </>
   );
 };
