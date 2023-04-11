@@ -56,7 +56,49 @@ const Home = () => {
           </div>
         </div>
       </main>
-      <section className={styles.aboutContainer}></section>
+      <footer className={styles.homeFooter}>
+        {/* <img src="/images/bob.png" alt="easter egg" /> */}
+        <div className={styles.footerLeft}>
+          <h1>Get In Touch</h1>
+          <div className={styles.contact}>
+            <a
+              href="https://www.instagram.com/rasam.by.providence/"
+              target="blank"
+            >
+              <i class="bi bi-instagram"></i>
+            </a>
+            <a
+              href="https://www.facebook.com/rasambyprovidence/"
+              target="blank"
+            >
+              <i class="bi bi-facebook"></i>
+            </a>
+            <a href="#">
+              <i class="bi bi-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+        <div className={styles.footerMiddle}>
+          <div className={styles.footerLogo}>
+            <img src="/images/prc-logo.png" alt="LOGO" />
+            {/* <p>
+              &#169; Providence College of Engineering and School of Business
+            </p> */}
+          </div>
+        </div>
+
+        <div className={styles.footerRight}>
+          <iframe
+            className={styles.map}
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3937.382652086006!2d76.61202467491256!3d9.299321490773194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b0622984cfaf3af%3A0xd0320f890b6fca5!2sProvidence%20College%20of%20Engineering%20%26%20School%20of%20Business%2C%20Chengannur!5e0!3m2!1sen!2sin!4v1681193448036!5m2!1sen!2sin&maptype=roadmap"
+            width="500"
+            height="250"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </footer>
     </>
   );
 };
