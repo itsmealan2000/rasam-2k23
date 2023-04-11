@@ -41,7 +41,7 @@ const Home = () => {
   }, [isMobile]);
   return (
     <>
-      <main className={styles.mainContainer}>
+      <section className={styles.mainContainer}>
         <NavBar />
         <div className={styles.videoContainer}>
           <video autoPlay muted loop ref={videoRef}>
@@ -53,7 +53,8 @@ const Home = () => {
             <Clock />
           </div>
         </div>
-      </main>
+      </section>
+      <section className={styles.aboutContainer}></section>
     </>
   );
 };
