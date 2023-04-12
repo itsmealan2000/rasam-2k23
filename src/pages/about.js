@@ -5,7 +5,7 @@ import styles from "../styles/About.module.scss";
 
 export const getStaticProps = async () => {
   const url = process.env.CMSURL;
-  const query = `*[_type == 'pages' && slug.current == 'pages']{about{ title, Content[]{children[]{_type, text}} ,metadata {title, desc} } }`;
+  const query = `*[_type == 'pages' && slug.current == 'pages']{about{ title, Content[]{children[]} ,metadata {title, desc} } }`;
   const res = await fetch(url + encodeURIComponent(query));
   const data = await res.json();
 
@@ -56,9 +56,10 @@ const About = ({ data }) => {
 
   for (let i in children) {
     console.log(children[i]._type, children[i].text);
-    if (children[i]._type == "span") {
+    if(children[i].marks[0] == 'strong') elemList.push(<strong>{children[i].text}</strong>);
+    else if (children[i]._type == "span") 
       elemList.push(<span>{children[i].text}</span>);
-    }
+    
   }
 
   return (
