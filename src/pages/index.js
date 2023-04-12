@@ -69,7 +69,7 @@ const Home = () => {
             </a>
             <a
               href="https://www.facebook.com/rasambyprovidence/"
-              target="blank"
+              target="blank7"
             >
               <i class="bi bi-facebook"></i>
             </a>

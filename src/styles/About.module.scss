@@ -1,0 +1,53 @@
+.aboutMain {
+  background: url("/images/bg-about.jpg");
+  height: 100dvh;
+  width: 100dvw;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutMask {
+  height: 100dvh;
+  width: 100dvw;
+  background-color: #011b1a5b;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutText {
+  background-color: #011b1a3f;
+  backdrop-filter: blur(8px);
+  border-radius: 1rem;
+  height: 50%;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+
+  h1 {
+    font-family: "aquatico";
+    color: white;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+
+    span {
+      font-family: "ananda";
+      font-size: 50px;
+      text-decoration: wavy;
+    }
+  }
+
+  p {
+    width: 70%;
+    color: white;
+    font-family: "Anuphan", sans-serif;
+    font-weight: lighter;
+    text-align: justify;
+  }
+}
