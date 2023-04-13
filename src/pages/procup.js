@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "../styles/Procup.module.scss";
-import NavBar from "../components/Navbar";
+import NavBar from "../components/navbar";
 
 const Procup = () => {
   return (

@@ -9,6 +9,10 @@
   background: url("/images/bg-sports.jpg");
   background-size: cover;
   background-attachment: fixed;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 .procMask {
@@ -24,6 +28,10 @@
   background-color: rgba(0, 0, 0, 0.5);
 
   overflow-y: scroll;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
 
   h1 {
     color: #fff1b9;
@@ -59,6 +67,7 @@
       height: 200px;
       width: 200px;
       border-radius: 100%;
+      margin-top: 20%;
     }
   }
 
