@@ -1,8 +1,8 @@
-import $ from "jquery";
 import React, { useEffect, useState, useRef } from "react";
 import NavBar from "../components/navbar";
 import SEO from "../components/SEO";
 import styles from "../styles/About.module.scss";
+import ImgCarousel from "../components/carousel";
 
 export const getStaticProps = async () => {
   const url = process.env.CMSURL;
@@ -74,6 +74,14 @@ const About = ({ data }) => {
           </h1>
 
           <p>{elemList}</p>
+        </div>
+        <h1 className={styles.cHeader}>GLIMPSES OF RASAM</h1>
+        <div className={styles.carouselContainer}>
+          <ImgCarousel />
+        </div>
+        <h1 className={styles.cHeader}>SPONSORS</h1>
+        <div className={styles.sponsorContainer}>
+          <p>Swimming your way soon!</p>
         </div>
       </div>
     </main>
