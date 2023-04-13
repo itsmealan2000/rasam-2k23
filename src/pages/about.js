@@ -1,3 +1,4 @@
+import $ from "jquery";
 import React, { useEffect, useState, useRef } from "react";
 import NavBar from "../components/navbar";
 import SEO from "../components/SEO";
@@ -56,17 +57,17 @@ const About = ({ data }) => {
 
   for (let i in children) {
     console.log(children[i]._type, children[i].text);
-    if(children[i].marks[0] == 'strong') elemList.push(<strong>{children[i].text}</strong>);
-    else if (children[i]._type == "span") 
+    if (children[i].marks[0] == "strong")
+      elemList.push(<strong>{children[i].text}</strong>);
+    else if (children[i]._type == "span")
       elemList.push(<span>{children[i].text}</span>);
-    
   }
 
   return (
     <main className={styles.aboutMain}>
       <SEO title="About" description="This is all about the about page" />
       <NavBar />
-      <div className={styles.aboutMask}>
+      <div className={styles.aboutMask} id="mask">
         <div className={styles.aboutText}>
           <h1>
             ABOUT <span>RASAM</span>

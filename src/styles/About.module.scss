@@ -1,5 +1,5 @@
 .aboutMain {
-  background: url("/images/bg-about.jpg");
+  background: url("/images/bg-about.png");
   height: 100dvh;
   width: 100dvw;
   background-size: cover;
@@ -11,11 +11,17 @@
 .aboutMask {
   height: 100dvh;
   width: 100dvw;
-  background-color: #011b1a5b;
+  background-color: #050c1852;
 
   display: flex;
   justify-content: center;
   align-items: center;
+
+  overflow-y: scroll;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 .aboutText {
@@ -23,7 +29,7 @@
   backdrop-filter: blur(8px);
   border-radius: 1rem;
   height: 50%;
-  width: 80%;
+  width: 70%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -35,6 +41,8 @@
     color: white;
     text-decoration: underline;
     text-underline-offset: 10px;
+    position: relative;
+    top: -50px;
 
     span {
       font-family: "ananda";
@@ -47,7 +55,49 @@
     width: 70%;
     color: white;
     font-family: "Anuphan", sans-serif;
+    font-size: 20px;
     font-weight: lighter;
     text-align: justify;
+  }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 1) {
+  .aboutMain {
+    background: url("/images/bg-about-mob.png");
+    background-size: cover;
+  }
+
+  .aboutMask {
+    height: 100dvh;
+    width: 100dvw;
+    background-color: #050c1852;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow-y: scroll;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  .aboutText {
+    width: 90%;
+    height: 70%;
+
+    h1 {
+      font-size: 25px;
+      margin-bottom: 5px;
+
+      span {
+        font-size: 35px;
+      }
+    }
+    p {
+      font-size: 20px;
+      width: 85%;
+    }
   }
 }
