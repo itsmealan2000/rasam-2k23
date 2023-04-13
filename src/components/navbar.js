@@ -6,6 +6,9 @@ const NavBar = () => {
     <div className={styles.navBarContainer}>
       <ul className={styles.listDesk}>
         <li>
+          <Link href="/">HOME</Link>
+        </li>
+        <li>
           <Link href="/about">ABOUT</Link>
         </li>
         <li>
@@ -16,6 +19,11 @@ const NavBar = () => {
         </li>
       </ul>
       <ul className={styles.listMob}>
+        <li>
+          <Link href="/">
+            <i class="bi bi-house-fill"></i>
+          </Link>
+        </li>
         <li>
           <Link href="about">
             <i className="bi bi-info-circle-fill"></i>
