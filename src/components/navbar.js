@@ -15,7 +15,7 @@ const NavBar = () => {
           <Link href="#">EVENTS</Link>
         </li>
         <li>
-          <Link href="#">PROCUP</Link>
+          <Link href="/procup">PROCUP</Link>
         </li>
       </ul>
       <ul className={styles.listMob}>
@@ -35,7 +35,7 @@ const NavBar = () => {
           </Link>
         </li>
         <li>
-          <Link href="#">
+          <Link href="/procup">
             <i class="bi bi-joystick"></i>
           </Link>
         </li>
