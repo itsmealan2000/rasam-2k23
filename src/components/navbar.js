@@ -28,7 +28,7 @@ const NavBar = () => {
         </li>
         <li>
           <Link href="#">
-            <i className="bi bi-people-fill"></i>
+            <i class="bi bi-joystick"></i>
           </Link>
         </li>
       </ul>
