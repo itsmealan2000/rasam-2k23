@@ -20,6 +20,8 @@
   align-items: center;
   flex-direction: row;
   position: fixed;
+  top: 0;
+  left: 0;
   width: 100dvw;
 
   .listDesk {
@@ -85,13 +87,10 @@
   .navBarContainer {
     height: 100px;
     width: 100vw;
-    z-index: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: row;
-    position: absolute;
-    bottom: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
 
     .listDesk {
       display: none;
